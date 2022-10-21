@@ -1,0 +1,33 @@
+/*
+ * Copyright (c) 2020 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/outputs.h>
+
+/ {
+	keymap {
+		compatible = "zmk,keymap";
+
+		default_layer {
+// ------------------------------------------------------------------------------------------------------------
+// |  ESC  |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |   -   |
+// |  TAB  |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I    |  O   |   P   |   \   |
+// |  CTRL |  A  |  S  |  D   |  F   |  G   |                   |  H   |  J    |  K    |  L   |   ;   |   '   |
+// | SHIFT |  Z  |  X  |  C   |  V   |  B   |                   |  N   |  M    |  ,    |  .   |   /   | SHIFT |
+// | LCTL  | LGUI  | LALT |  GRAV |  | EQL | DEL | BKSP|  | RET | SPC  | LBKT |  RBKT  | LBKT | HOME  |   END |
+			bindings = <
+&kp TAB   &kp Q     &kp W    &kp E     &kp R                     &kp Y     	&kp U     &kp I     &kp O     &kp P
+&kp LCTRL &kp A     &kp S    &kp D     &kp F                     &kp H     	&kp J     &kp K     &kp L     &kp SEMI
+&kp LSHFT &kp Z     &kp X    &kp C     &kp V                     &kp N     	&kp M     &kp COMMA &kp DOT   &kp T
+&kp LCTRL &kp LGUI  &kp LALT &kp GRAVE                           			&kp RBKT  &kp SPACE &kp MINUS &kp E
+			>;
+		sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+		};
+	};
+};
