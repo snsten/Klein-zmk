@@ -48,8 +48,8 @@
         nav_layer {
 
             bindings = <
-&trans         &trans         &trans         &trans         &trans              &kp CAPSLOCK   &trans         &kp K_CUT      &kp K_COPY     &kp K_PASTE
-&kp LGUI       &kp LALT       &kp LCTRL      &kp LSHFT      &trans              &kp LEFT       &kp DOWN       &kp UP         &kp RIGHT      &bt BT_CLR
+&trans         &trans         &trans         &trans         &trans              &kp CAPSLOCK   &bt BT_CLR     &kp K_CUT      &kp K_COPY     &kp K_PASTE
+&kp LGUI       &kp LALT       &kp LCTRL      &kp LSHFT      &trans              &kp LEFT       &kp DOWN       &kp UP         &kp RIGHT      &trans
 &trans         &trans         &trans         &trans         &trans              &kp INSERT     &kp HOME       &kp PG_UP      &kp PG_DN      &kp END
 &trans         &trans         &trans         &bootloader                                       &bt BT_NXT     &kp RET        &kp BKSP       &kp DEL
             >;
