@@ -40,7 +40,7 @@
 &kp Q          &kp W          &kp E          &kp R          &kp T               &kp Y          &kp U          &kp I          &kp O          &kp P
 &mt LGUI A     &mt LALT S     &mt LCTRL D    &mt LSHFT F    &kp G               &kp H          &mt RSHFT J    &mt RCTRL K    &mt RALT L     &mt LGUI SQT
 &kp Z          &kp X          &kp C          &kp V          &kp B               &kp N          &kp M          &kp COMMA      &kp DOT        &kp FSLH
-&lt MEDIA ESC  &lt NAV SPACE  &lt K_CONTEXT_MENU TAB    &bootloader                                       &kp BLU     &lt SYM RET    &lt NUM BKSP   &lt FUN DEL
+&lt MEDIA ESC  &lt NAV SPACE  &mt K_CONTEXT_MENU TAB    &bootloader                                       &lt BLU K_MUTE     &lt SYM RET    &lt NUM BKSP   &lt FUN DEL
             >;
         sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
@@ -48,8 +48,8 @@
         nav_layer {
 
             bindings = <
-&trans         &trans         &trans         &trans         &trans              &kp CAPSLOCK   &bt BT_CLR     &kp K_CUT      &kp K_COPY     &kp K_PASTE
-&kp LGUI       &kp LALT       &kp LCTRL      &kp LSHFT      &trans              &kp LEFT       &kp DOWN       &kp UP         &kp RIGHT      &trans
+&trans         &trans         &trans         &trans         &trans              &kp CAPSLOCK   &bt BT_CLR     &kp UP      &kp K_COPY     &kp K_PASTE
+&kp LGUI       &kp LALT       &kp LCTRL      &kp LSHFT      &trans              &kp HOME       &kp LEFT       &kp DOWN         &kp RIGHT      &END
 &trans         &trans         &trans         &trans         &trans              &kp INSERT     &kp HOME       &kp PG_UP      &kp PG_DN      &kp END
 &trans         &trans         &trans         &bootloader                                       &bt BT_NXT     &kp RET        &kp BKSP       &kp DEL
             >;
