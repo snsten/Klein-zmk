@@ -49,7 +49,7 @@
 
             bindings = <
 &trans         &trans         &trans         &trans         &trans              &kp CAPSLOCK   &bt BT_CLR     &kp UP      &kp K_COPY     &kp K_PASTE
-&kp LGUI       &kp LALT       &kp LCTRL      &kp LSHFT      &trans              &kp HOME       &kp LEFT       &kp DOWN         &kp RIGHT      &END
+&kp LGUI       &kp LALT       &kp LCTRL      &kp LSHFT      &trans              &kp HOME       &kp LEFT       &kp DOWN       &kp RIGHT      &kp END
 &trans         &trans         &trans         &trans         &trans              &kp INSERT     &kp HOME       &kp PG_UP      &kp PG_DN      &kp END
 &trans         &trans         &trans         &bootloader                                       &bt BT_NXT     &kp RET        &kp BKSP       &kp DEL
             >;
