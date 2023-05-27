@@ -19,10 +19,10 @@
 #define BLU 6
 
 &mt {
-  quick-tap-ms = <100>;
+  quick-tap-ms = <125>;
   global-quick-tap;
   flavor = "tap-preferred";
-  tapping-term-ms = <180>;
+  tapping-term-ms = <200>;
 };
 
 / {
@@ -42,7 +42,7 @@
 &kp Z          &kp X          &kp C          &kp D          &kp V               &kp K          &kp H          &kp COMMA      &kp DOT        &kp FSLH
 &mt K_CONTEXT_MENU ESC  &lt NAV SPACE  &kp TAB    &bootloader                   &lt BLU K_MUTE     &lt SYM RET    &lt NUM BKSP   &lt FUN DEL
             >;
-        sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>;
+        sensor-bindings = <&inc_dec_kp C_AC_UNDO C_AC_REDO &inc_dec_kp DOWN UP>;
         };
 
         nav_layer {
