@@ -42,7 +42,7 @@
 &kp Z          &kp X          &kp C          &kp D          &kp V               &kp K          &kp H          &kp COMMA      &kp DOT        &kp FSLH
 &mt K_CONTEXT_MENU ESC  &lt NAV SPACE  &kp TAB    &bootloader                   &lt BLU K_MUTE     &lt SYM RET    &lt NUM BKSP   &lt FUN DEL
             >;
-        sensor-bindings = <&inc_dec_kp C_AC_UNDO C_AC_REDO &inc_dec_kp DOWN UP>;
+        sensor-bindings = <&inc_dec_kp C_MENU_UP C_MENU_DOWN &inc_dec_kp UP DOWN>;
         };
 
         nav_layer {
@@ -53,7 +53,7 @@
 &trans         &trans         &trans         &trans         &trans              &kp INSERT     &kp HOME       &kp PG_UP      &kp PG_DN      &kp END
 &trans         &trans         &trans         &bootloader                                       &bt BT_NXT     &kp RET        &kp BKSP       &kp DEL
             >;
-        sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+        sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
         };
 
         num_layer {
