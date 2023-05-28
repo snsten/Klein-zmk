@@ -40,7 +40,7 @@
 &kp Q          &kp W          &kp F          &kp P          &kp B               &kp J          &kp L          &kp U          &kp Y          &kp SQT
 &mt LGUI A     &mt LALT R     &mt LCTRL S    &mt LSHFT T    &kp G               &kp M          &mt RSHFT N    &mt RCTRL E    &mt RALT I     &mt LGUI O
 &kp Z          &kp X          &kp C          &kp D          &mt ESC V           &kp K          &kp H          &kp COMMA      &kp DOT        &kp FSLH
-&lt NAV DEL   &lt NAV BKSP  &mt K_CONTEXT_MENU TAB   &caps_word                &kp K_MUTE   &lt SYM RET    &lt NUM SPACE   &lt FUN ESC
+&lt NAV DEL   &lt NAV SPACE  &mt K_CONTEXT_MENU TAB   &caps_word                &kp K_MUTE   &lt SYM RET    &lt NUM BKSP   &lt FUN ESC
             >;
         sensor-bindings = <&inc_dec_kp LC(PG_UP) LC(PG_DN) &inc_dec_kp LC(Z) LC(Y)>;
         };
