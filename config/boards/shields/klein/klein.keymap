@@ -59,9 +59,9 @@
         num_layer {
             
             bindings = <
-&kp LBKT       &kp N7         &kp N8         &kp N9         &kp RBKT            &trans        &kp LGUI(N7)         &kp LGUI(N8)         &kp LGUI(N9)        &trans
-&kp SEMI       &kp N4         &kp N5         &kp N6         &kp EQUAL           &trans         &kp LGUI(N4)         &kp LGUI(N5)         &kp LGUI(N6)       &kp LGUI
-&kp GRAVE      &kp N1         &kp N2         &kp N3         &kp BSLH            &trans         &kp LGUI(N1)        &kp LGUI(N2)         &kp LGUI(N3)         &trans
+&kp LBKT       &kp N7         &kp N8         &kp N9         &kp RBKT            &trans        &kp LG(N7)         &kp LG(N8)         &kp LG(N9)        &trans
+&kp SEMI       &kp N4         &kp N5         &kp N6         &kp EQUAL           &trans         &kp LG(N4)         &kp LG(N5)         &kp LG(N6)       &kp LGUI
+&kp GRAVE      &kp N1         &kp N2         &kp N3         &kp BSLH            &trans         &kp LG(N1)        &kp LG(N2)         &kp LG(N3)         &trans
 &kp PERIOD     &kp N0         &kp MINUS      &bootloader                                       &bootloader    &trans         &trans         &trans
             >;
         sensor-bindings = <&inc_dec_kp UP DOWN>;
