@@ -50,7 +50,7 @@
             bindings = <
 &kp LC(X)          &kp LC(C)        &kp UP         &kp LC(V)        &kp LC(A)              &kp LC(A)      &kp LC(V)      &kp UP         &kp LC(C)      &kp LC(X)
 &kp HOME       &kp LEFT       &mt LCTRL DOWN       &mt LSHFT RIGHT      &kp END             &kp HOME       &mt RSHFT LEFT       &mt RCTRL DOWN       &kp RIGHT      &kp END
-&trans         &trans         &kp DOWN         &kp INSERT         &caps_word              &trans         &kp INSERT     &kp PG_UP      &kp PG_DN      &trans
+&trans         &trans         &kp DOWN         &kp INSERT         &kp &caps_word              &trans         &kp INSERT     &kp PG_UP      &kp PG_DN      &trans
 &trans         &trans         &trans         &bootloader                                       &trans     &kp RET        &kp BKSP       &kp DEL
             >;
         sensor-bindings = <&inc_dec_kp UP DOWN>;
