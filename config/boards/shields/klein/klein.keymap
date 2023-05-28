@@ -40,17 +40,17 @@
 &kp Q          &kp W          &kp F          &kp P          &kp B               &kp J          &kp L          &kp U          &kp Y          &kp SQT
 &mt LGUI A     &mt LALT R     &mt LCTRL S    &mt LSHFT T    &kp G               &kp M          &mt RSHFT N    &mt RCTRL E    &mt RALT I     &mt LGUI O
 &kp Z          &kp X          &kp C          &kp D          &mt ESC V           &kp K          &kp H          &kp COMMA      &kp DOT        &kp FSLH
-&lt NAV DEL   &lt NAV BKSP  &mt K_CONTEXT_MENU RET   &caps_word              &lt BLU  PRINTSCREEN   &lt SYM TAB    &lt NUM SPACE   &lt FUN ESC
+&lt NAV DEL   &lt NAV BKSP  &mt K_CONTEXT_MENU TAB   &caps_word                &kp K_MUTE   &lt SYM RET    &lt NUM SPACE   &lt FUN ESC
             >;
-        sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp LC(Z) LC(Y)>;
+        sensor-bindings = <&inc_dec_kp LC(PG_UP) LC(PG_DN) &inc_dec_kp LC(Z) LC(Y)>;
         };
 
         nav_layer {
 
             bindings = <
 &kp LC(X)          &kp LC(C)        &kp UP         &kp LC(V)        &kp LC(A)              &kp LC(A)      &kp LC(V)      &kp UP         &kp LC(C)      &kp LC(X)
-&kp HOME       &kp LEFT       &mt LCTRL DOWN       &mt LSHFT RIGHT      &kp END             &kp HOME       &mt RSHFT LEFT       &mt RCTRL DOWN       &kp RIGHT      &kp END
-&trans         &trans         &kp DOWN         &kp INSERT         &trans              &trans         &kp INSERT     &kp PG_UP      &kp PG_DN      &trans
+&kp HOME       &kp LEFT       &mt LCTRL DOWN       &mt LSHFT RIGHT      &kp END             &kp HOME       &kp LEFT       &kp DOWN       &kp RIGHT      &kp END
+&trans         &trans         &kp DOWN         &kp INSERT         &trans                    &trans         &kp INSERT         &kp PG_UP      &kp PG_DN      &trans
 &trans         &trans         &trans         &bootloader                                       &trans     &kp RET        &kp BKSP       &kp DEL
             >;
         sensor-bindings = <&inc_dec_kp UP DOWN>;
@@ -59,12 +59,12 @@
         num_layer {
             
             bindings = <
-&kp LBKT       &kp N7         &kp N8         &kp N9         &kp RBKT            &trans         &trans         &trans         &trans         &trans
-&kp SEMI       &kp N4         &kp N5         &kp N6         &kp EQUAL           &trans         &kp LSHFT      &kp LCTRL      &kp LALT       &kp LGUI
-&kp GRAVE      &kp N1         &kp N2         &kp N3         &kp BSLH            &trans         &trans         &trans         &trans         &trans
+&kp LBKT       &kp N7         &kp N8         &kp N9         &kp RBKT            &trans        &kp LGUI(N7)         &kp LGUI(N8)         &kp LGUI(N9)        &trans
+&kp SEMI       &kp N4         &kp N5         &kp N6         &kp EQUAL           &trans         &kp LGUI(N4)         &kp LGUI(N5)         &kp LGUI(N6)       &kp LGUI
+&kp GRAVE      &kp N1         &kp N2         &kp N3         &kp BSLH            &trans         &kp LGUI(N1)        &kp LGUI(N2)         &kp LGUI(N3)         &trans
 &kp PERIOD     &kp N0         &kp MINUS      &bootloader                                       &bootloader    &trans         &trans         &trans
             >;
-        sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+        sensor-bindings = <&inc_dec_kp UP DOWN>;
         };
 
         fun_layer {
