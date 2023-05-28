@@ -42,7 +42,7 @@
 &kp Z          &kp X          &kp C          &kp D          &kp V               &kp K          &kp H          &kp COMMA      &kp DOT        &kp FSLH
 &mt ESC DEL   &lt NAV BKSP  &mt K_CONTEXT_MENU RET  &bootloader                 &lt BLU K_MUTE    &lt SYM TAB    &lt NUM SPACE   &lt FUN K_CONTEXT_MENU
             >;
-        sensor-bindings = <&inc_dec_kp  &inc_dec_kp UP DOWN LC(Z) LC(Y)>;
+        sensor-bindings = <&inc_dec_kp   UP DOWN &inc_dec_kp LC(Z) LC(Y)>;
         };
 
         nav_layer {
