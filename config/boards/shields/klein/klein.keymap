@@ -38,7 +38,7 @@
 
             bindings = <
 &kp Q          &kp W          &kp F          &kp P          &kp B               &kp J          &kp L          &kp U          &kp Y          &kp SQT
-&mt LGUI A     &mt LALT R     &mt LCTRL S    &mt LSHFT T    &kp G               &mt caps_word M          &mt RSHFT N    &mt RCTRL E    &mt RALT I     &mt LGUI O
+&mt LGUI A     &mt LALT R     &mt LCTRL S    &mt LSHFT T    &kp G               &mt &caps_word M          &mt RSHFT N    &mt RCTRL E    &mt RALT I     &mt LGUI O
 &kp Z          &kp X          &kp C          &kp D          &mt ESC V           &kp K          &kp H          &kp COMMA      &kp DOT        &kp FSLH
 &lt NAV DEL   &lt NAV BKSP  &mt K_CONTEXT_MENU RET  &lt BLU  PAUSE_BREAK              &lt BLU  PRINTSCREEN   &lt SYM TAB    &lt NUM SPACE   &lt FUN ESC
             >;
