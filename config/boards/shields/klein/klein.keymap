@@ -40,7 +40,7 @@
 &kp Q          &kp W          &kp F          &kp P          &kp B               &kp J          &kp L          &kp U          &kp Y          &kp SQT
 &mt LGUI A     &mt LALT R     &mt LCTRL S    &mt LSHFT T    &kp G               &kp M          &mt RSHFT N    &mt RCTRL E    &mt RALT I     &mt LGUI O
 &kp Z          &kp X          &kp C          &kp D          &mt ESC V           &kp K          &kp H          &kp COMMA      &kp DOT        &kp FSLH
-&lt NAV DEL   &lt NAV BKSP  &mt K_CONTEXT_MENU RET  &lt BLU  PAUSE_BREAK              &lt BLU  PRINTSCREEN   &lt SYM TAB    &lt NUM SPACE   &lt FUN ESC
+&lt NAV DEL   &lt NAV BKSP  &mt K_CONTEXT_MENU RET   &caps_word              &lt BLU  PRINTSCREEN   &lt SYM TAB    &lt NUM SPACE   &lt FUN ESC
             >;
         sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp LC(Z) LC(Y)>;
         };
@@ -50,7 +50,7 @@
             bindings = <
 &kp LC(X)          &kp LC(C)        &kp UP         &kp LC(V)        &kp LC(A)              &kp LC(A)      &kp LC(V)      &kp UP         &kp LC(C)      &kp LC(X)
 &kp HOME       &kp LEFT       &mt LCTRL DOWN       &mt LSHFT RIGHT      &kp END             &kp HOME       &mt RSHFT LEFT       &mt RCTRL DOWN       &kp RIGHT      &kp END
-&trans         &trans         &kp DOWN         &kp INSERT         &kp &caps_word              &trans         &kp INSERT     &kp PG_UP      &kp PG_DN      &trans
+&trans         &trans         &kp DOWN         &kp INSERT         &trans              &trans         &kp INSERT     &kp PG_UP      &kp PG_DN      &trans
 &trans         &trans         &trans         &bootloader                                       &trans     &kp RET        &kp BKSP       &kp DEL
             >;
         sensor-bindings = <&inc_dec_kp UP DOWN>;
