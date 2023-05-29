@@ -40,7 +40,7 @@
 &kp Q          &kp W          &kp F          &kp P          &kp B               &kp J          &kp L          &kp U          &kp Y          &kp SQT
 &mt LGUI A     &mt LALT R     &mt LCTRL S    &mt LSHFT T    &kp G               &kp M          &mt RSHFT N    &mt RCTRL E    &mt RALT I     &mt LGUI O
 &kp Z          &kp X          &kp C          &kp D          &mt ESC V           &kp K          &kp H          &kp COMMA      &kp DOT        &kp FSLH
-&lt NAV DEL   &lt NAV SPACE  &mt K_CONTEXT_MENU TAB   &caps_word                &kp K_MUTE   &lt SYM RET    &lt NUM BKSP   &lt FUN ESC
+&lt NAV DEL   &lt NAV SPACE  &mt LSHFT TAB   &caps_word                &kp K_MUTE   &lt SYM RET    &lt NUM BKSP   &lt FUN ESC
             >;
         sensor-bindings = <&inc_dec_kp LC(PG_UP) LC(PG_DN) &inc_dec_kp LC(Z) LC(Y)>;
         };
@@ -53,7 +53,7 @@
 &trans         &trans         &kp DOWN         &kp INSERT         &trans                    &trans         &kp INSERT         &kp PG_UP      &kp PG_DN      &trans
 &trans         &trans         &trans         &bootloader                                       &trans     &kp RET        &kp BKSP       &kp DEL
             >;
-        sensor-bindings = <&inc_dec_kp UP DOWN>;
+        sensor-bindings = <&inc_dec_kp LEFT RIGHT &inc_dec_kp UP DOWN>;
         };
 
         num_layer {
@@ -83,7 +83,7 @@
             bindings = <
 &kp LS(LBKT)   &kp LS(N7)     &kp LS(N8)     &kp LS(N9)     &kp LS(RBKT)        &trans         &trans         &trans         &trans         &trans
 &kp LS(SEMI)   &kp LS(N4)     &kp LS(N5)     &kp LS(N6)     &kp LS(EQUAL)       &trans         &kp LSHFT      &kp LCTRL      &kp LALT       &kp LGUI
-&kp LS(GRAVE)  &kp LS(N1)     &kp LS(N2)     &kp LS(N3)     &kp LS(BSLH)        &trans         &trans         &trans         &trans         &trans
+&kp LS(GRAVE)  &kp LS(N1)     &kp LS(N2)     &kp LS(N3)     &kp LS(BSLH)        &caps_word     &kp K_CONTEXT_MENU         &trans         &trans         &trans
 &kp LS(PERIOD) &kp LS(N0)     &kp LS(MINUS)  &bootloader                                       &bootloader    &trans         &trans         &trans
             >;
         sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
