@@ -40,9 +40,9 @@
 &kp Q          &kp W          &kp F          &kp P          &kp B               &kp J          &kp L          &kp U          &kp Y          &kp SQT
 &mt LGUI A     &mt LALT R     &mt LCTRL S    &mt LSHFT T    &kp G               &kp M          &mt RSHFT N    &mt RCTRL E    &mt RALT I     &mt LGUI O
 &kp Z          &kp X          &kp C          &mt K_CONTEXT_MENU D   &mt ESC V           &kp K          &kp H          &kp COMMA      &kp DOT        &kp FSLH
-&mt INSERT DEL   &lt NAV SPACE  &lt NUM TAB   &lt BLU  K_CONTEXT_MENU             &lt BLU K_CONTEXT_MENU  &lt SYM RET    &lt NUM BKSP   &lt FUN ESC
+&mt INSERT DEL   &lt NUM SPACE  &lt NAV TAB   &lt BLU  K_CONTEXT_MENU             &lt BLU K_CONTEXT_MENU  &lt SYM RET    &lt NUM BKSP   &lt FUN ESC
             >;
-        sensor-bindings = <&inc_dec_kp LA(LS(TAB)) LA(TAB) &inc_dec_kp LC(Z) LC(Y)>;
+        sensor-bindings = <&inc_dec_kp  LC(PG_UP) LC(PG_DN)  &inc_dec_kp LC(Z) LC(Y)>;
         };
 
         nav_layer {
@@ -61,7 +61,7 @@
             bindings = <
 &kp LBKT       &kp N7         &kp N8         &kp N9         &kp RBKT            &trans         &kp N7         &kp N8         &kp N9        &trans
 &mt LGUI SEMI  &mt LALT N4    &mt LCTRL N5   &mt LSHFT N6   &kp EQUAL           &trans         &mt RSHFT N4   &mt RCTRL N5   &mt RALT N6       &kp LGUI
-&kp GRAVE      &kp N1         &kp N2         &kp N3         &kp BSLH            &caps_word     &kp N1         &kp N2         &kp N3          &trans
+&kp GRAVE      &kp N1         &kp N2         &kp N3         &mt LGUI BSLH            &caps_word     &kp N1         &kp N2         &kp N3          &trans
 &kp PERIOD     &kp N0         &trans      &bootloader                                       &bootloader   &kp MINUS         &kp N0          &kp PERIOD
             >;
         sensor-bindings = <&inc_dec_kp UP DOWN>;
@@ -72,7 +72,7 @@
             bindings = <
 &kp F12        &kp F7         &kp F8         &kp F9         &kp PSCRN           &trans         &trans         &trans         &trans         &trans
 &kp F11        &kp F4         &kp F5         &kp F6         &kp SYSREQ          &trans         &kp LSHFT      &kp LCTRL      &kp LALT       &kp LGUI
-&kp F10        &kp F1         &kp F2         &kp F3         &kp PAUSE_BREAK     &trans         &trans         &trans         &trans         &trans
+&kp F10        &kp F1         &kp F2         &kp F3         &kp PAUSE_BREAK     &trans          &caps_word        &trans         &trans         &trans
 &kp ESC        &kp SPACE      &kp TAB        &bootloader                                       &bootloader    &trans         &trans         &trans
             >;
         sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
