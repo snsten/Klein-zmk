@@ -59,7 +59,7 @@
         num_layer {
             
             bindings = <
-&kp LBKT       &kp N7         &kp N8         &kp N9         &mg N0  RBKT            &trans         &kp N7         &kp N8         &kp N9        &trans
+&kp LBKT       &kp N7         &kp N8         &kp N9         &mt N0  RBKT            &trans         &kp N7         &kp N8         &kp N9        &trans
 &mt LGUI SEMI  &mt LALT N4    &mt LCTRL N5   &mt LSHFT N6   &kp EQUAL           &trans         &mt RSHFT N4   &mt RCTRL N5   &mt RALT N6       &kp LGUI
 &kp GRAVE      &kp N1         &kp N2         &kp N3         &mt LGUI BSLH            &caps_word     &kp N1         &kp N2         &kp N3          &trans
 &kp PERIOD     &kp N0         &trans      &bootloader                                       &bootloader   &kp MINUS         &kp N0          &kp PERIOD
