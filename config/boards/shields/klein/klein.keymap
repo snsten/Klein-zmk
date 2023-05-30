@@ -39,10 +39,10 @@
             bindings = <
 &kp Q          &kp W          &kp F          &kp P          &kp B               &kp J          &kp L          &kp U          &kp Y          &kp SQT
 &mt LGUI A     &mt LALT R     &mt LCTRL S    &mt LSHFT T    &kp G               &kp M          &mt RSHFT N    &mt RCTRL E    &mt RALT I     &mt LGUI O
-&kp Z          &kp X          &kp C          &kp D          &mt ESC V           &kp K          &kp H          &kp COMMA      &kp DOT        &kp FSLH
-&lt NAV DEL   &lt NAV SPACE  &mt LSHFT TAB   &lt BLU  K_CONTEXT_MENU             &lt BLU K_CONTEXT_MENU  &lt SYM RET    &lt NUM BKSP   &lt FUN ESC
+&kp Z          &kp X          &kp C          &mt K_CONTEXT_MENU D   &mt ESC V           &kp K          &kp H          &kp COMMA      &kp DOT        &kp FSLH
+&mt INSERT DEL   &lt NAV SPACE  &lt NUM TAB   &lt BLU  K_CONTEXT_MENU             &lt BLU K_CONTEXT_MENU  &lt SYM RET    &lt NUM BKSP   &lt FUN ESC
             >;
-        sensor-bindings = <&inc_dec_kp LC(PG_UP) LC(PG_DN) &inc_dec_kp LC(Z) LC(Y)>;
+        sensor-bindings = <&inc_dec_kp LA(LS(TAB)) LA(TAB) &inc_dec_kp LC(Z) LC(Y)>;
         };
 
         nav_layer {
@@ -59,10 +59,10 @@
         num_layer {
             
             bindings = <
-&kp LBKT       &kp N7         &kp N8         &kp N9         &kp RBKT            &trans        &kp LG(N7)         &kp LG(N8)         &kp LG(N9)        &trans
-&kp SEMI       &kp N4         &kp N5         &kp N6         &kp EQUAL           &trans         &kp LG(N4)         &kp LG(N5)         &kp LG(N6)       &kp LGUI
-&kp GRAVE      &kp N1         &kp N2         &kp N3         &kp BSLH            &trans         &kp LG(N1)        &kp LG(N2)         &kp LG(N3)         &trans
-&kp PERIOD     &kp N0         &kp MINUS      &bootloader                                       &bootloader    &trans         &trans         &trans
+&kp LBKT       &kp N7         &kp N8         &kp N9         &kp RBKT            &trans         &kp N7         &kp N8         &kp N9        &trans
+&mt LGUI SEMI  &mt LALT N4    &mt LCTRL N5   &mt LSHFT N6   &kp EQUAL           &trans         &mt RSHFT N4   &mt RCTRL N5   &mt RALT N6       &kp LGUI
+&kp GRAVE      &kp N1         &kp N2         &kp N3         &kp BSLH            &caps_word     &kp N1         &kp N2         &kp N3          &trans
+&kp PERIOD     &kp N0         &trans      &bootloader                                       &bootloader   &kp MINUS         &kp N0          &kp PERIOD
             >;
         sensor-bindings = <&inc_dec_kp UP DOWN>;
         };
@@ -83,7 +83,7 @@
             bindings = <
 &kp LS(LBKT)   &kp LS(N7)     &kp LS(N8)     &kp LS(N9)     &kp LS(RBKT)        &trans         &trans         &trans         &trans         &trans
 &kp LS(SEMI)   &kp LS(N4)     &kp LS(N5)     &kp LS(N6)     &kp LS(EQUAL)       &trans         &kp LSHFT      &kp LCTRL      &kp LALT       &kp LGUI
-&kp LS(GRAVE)  &kp LS(N1)     &kp LS(N2)     &kp LS(N3)     &kp LS(BSLH)        &caps_word     &kp K_CONTEXT_MENU         &trans         &trans         &trans
+&kp LS(GRAVE)  &kp LS(N1)     &kp LS(N2)     &kp LS(N3)     &kp LS(BSLH)        &trans         &trans         &trans         &trans         &trans
 &kp LS(PERIOD) &kp LS(N0)     &kp LS(MINUS)  &bootloader                                       &bootloader    &trans         &trans         &trans
             >;
         sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
