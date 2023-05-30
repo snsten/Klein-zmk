@@ -40,7 +40,7 @@
 &kp Q          &kp W          &kp F          &kp P          &kp B               &kp J          &kp L          &kp U          &kp Y          &kp SQT
 &mt LGUI A     &mt LALT R     &mt LCTRL S    &mt LSHFT T    &kp G               &kp M          &mt RSHFT N    &mt RCTRL E    &mt RALT I     &mt LGUI O
 &kp Z          &kp X          &kp C          &kp D          &mt ESC V           &kp K          &kp H          &kp COMMA      &kp DOT        &kp FSLH
-&lt NAV DEL   &lt NAV SPACE  &mt LSHFT TAB   &caps_word                &kp K_MUTE   &lt SYM RET    &lt NUM BKSP   &lt FUN ESC
+&lt NAV DEL   &lt NAV SPACE  &mt LSHFT TAB   &lt BLU               &lt BLU   &lt SYM RET    &lt NUM BKSP   &lt FUN ESC
             >;
         sensor-bindings = <&inc_dec_kp LC(PG_UP) LC(PG_DN) &inc_dec_kp LC(Z) LC(Y)>;
         };
@@ -103,9 +103,9 @@
         blu_layer {
             
             bindings = <
-&trans         &trans         &trans         &trans         &trans              &bt BT_CLR     &trans         &trans         &trans         &trans
+&trans         &trans         &trans         &trans          &bt BT_CLR             &bt BT_CLR     &trans         &trans         &trans         &trans
 &trans         &bt BT_SEL 3   &bt BT_SEL 4   &trans         &trans              &trans         &bt BT_PRV     &bt BT_NXT     &trans         &trans
-&trans         &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &trans              &trans         &trans         &trans         &trans         &trans
+&trans         &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 0               &trans        &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2          &trans
 &trans         &trans         &trans         &trans         &trans                             &trans         &trans         &trans         &trans
             >;
         sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
