@@ -47,7 +47,7 @@
             bindings = <
 &kp LC(X)          &kp LC(C)        &kp UP         &kp LC(V)        &kp LC(A)                     &kp LC(A)        &kp LC(V)      &kp UP       &kp LC(C)      &kp LC(X)
 &mt LGUI HOME       &mt LALT LEFT       &mt LCTRL UP       &mt LSHFT RIGHT     &kp END            &kp HOME         &kp LEFT       &kp UP       &kp RIGHT      &kp END
-&trans         &trans         &kp DOWN         &kp INSERT         &trans                          &trans           &kp PG_UP      &kp DOWN     &kp PG_DOWN     &trans
+&trans         &trans         &kp DOWN         &kp INSERT         &trans                          &trans           &kp PG_UP      &kp DOWN     &kp PG_DN     &trans
 &trans         &trans         &trans         &bootloader                                           &trans     &kp RET        &kp BKSP       &kp DEL
             >;
         sensor-bindings = <&inc_dec_kp LEFT RIGHT &inc_dec_kp UP DOWN>;
