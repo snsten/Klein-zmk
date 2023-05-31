@@ -34,9 +34,9 @@
  
 
             bindings = <
-&kp Q          &kp W          &kp F          &kp P          &kp B                       &kp J            &kp L          &kp U          &kp Y          &kp SQT
-&mt LGUI A     &mt LALT R     &mt LCTRL S    &mt LSHFT T    &mt INSERT  G               &mt INSERT  M    &mt RSHFT N    &mt RCTRL E    &mt RALT I     &mt LGUI O
-&kp Z          &kp X          &kp C          &mt K_CONTEXT_MENU D   &mt ESC V           &kp K            &kp H          &kp COMMA      &kp DOT        &kp FSLH
+&mt LC(S) Q    &mt LC(A) W    &mt LC(C) F     &mt LC(V)  P     &mt LC(E) B                       &kp J            &kp L          &kp U          &kp Y          &kp SQT
+&mt LGUI A     &mt LALT R     &mt LCTRL S    &mt LSHFT T    &mt LC(J)  G                      &mt INSERT  M    &mt RSHFT N    &mt RCTRL E    &mt RALT I     &mt LGUI O
+&kp Z          &kp X          &kp C          &mt LC(U) D   &mt ESC V              &mt K_CONTEXT_MENU K          &kp H          &kp COMMA      &kp DOT        &kp FSLH
 &lt FUN  DEL   &lt NUM SPACE  &lt NAV TAB   &lt BLU  K_CONTEXT_MENU             &lt BLU K_CONTEXT_MENU  &lt SYM RET    &lt NUM BKSP   &lt FUN ESC
             >;
         sensor-bindings = <&inc_dec_kp  LC(PG_UP) LC(PG_DN)  &inc_dec_kp LC(Z) LC(Y)>;
