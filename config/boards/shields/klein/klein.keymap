@@ -35,7 +35,7 @@
 &mt LC(S) Q    &mt LC(A) W           &mt LC(C) F     &mt LC(V)  P     &mt RET B           &kp J                   &kp L          &kp U          &kp Y          &kp SQT
 &mt LGUI A     &mt LALT R            &mt LCTRL S     &mt LSHFT T     &mt LC(E)  G          &mt INSERT  M           &mt RSHFT N    &mt RCTRL E    &mt RALT I     &mt LGUI O
 &mt ESC Z      &mt K_CONTEXT_MENU X   &mt INSERT C    &mt LC(U) D    &mt LC(J) V             &mt K_CONTEXT_MENU K    &kp H          &kp COMMA      &kp DOT        &kp FSLH
-&lt NAV  TAB   &lt NUM SPACE  &lt FUN DEL   &lt BLU  K_CONTEXT_MENU             &lt BLU K_CONTEXT_MENU  &lt SYM RET    &lt NUM BKSP   &lt FUN ESC
+&lt FUN DEL   &lt NUM SPACE  &lt NAV  TAB   &lt BLU  K_CONTEXT_MENU             &lt BLU K_CONTEXT_MENU  &lt SYM RET    &lt NUM BKSP   &lt FUN ESC
             >;
         sensor-bindings = <&inc_dec_kp  LC(PG_UP) LC(PG_DN)  &inc_dec_kp LC(Z) LC(Y)>;
         };
