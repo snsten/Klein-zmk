@@ -46,7 +46,7 @@
 &trans         &kp PG_UP        &kp UP           &kp PG_DN          &trans                &trans        &kp PG_UP       &kp UP       &kp PG_DN    &trans
 &mt LGUI HOME  &mt LALT LEFT    &mt LCTRL DOWN   &mt LSHFT RIGHT    &kp END                  &kp HOME         &kp LEFT       &kp DOWN     &kp RIGHT     &kp END
 &trans         &kp PG_UP        &kp DOWN         &kp PG_DN         &trans                   &trans           &kp PG_UP      &kp DOWN     &kp PG_DN     &trans
-&trans         &trans         &trans         &bootloader                                           &trans     &kp RET        &kp BKSP       &kp DEL
+&trans         &trans         &trans         &bootloader                                           &trans     &trans         &trans         &trans
             >;
         sensor-bindings = <&inc_dec_kp LEFT RIGHT &inc_dec_kp UP DOWN>;
         };
