@@ -65,10 +65,10 @@
         fun_layer {
             
             bindings = <
-&kp F12        &kp F7         &kp F8         &kp F9         &kp PSCRN           &trans         &trans         &trans         &trans         &trans
-&kp F11        &kp F4         &kp F5         &kp F6         &kp SYSREQ          &trans         &kp LSHFT      &kp LCTRL      &kp LALT       &kp LGUI
-&kp F10        &kp F1         &kp F2         &kp F3         &kp PAUSE_BREAK     &trans         &caps_word     &trans         &trans         &trans
-&kp ESC        &kp SPACE      &kp TAB        &bootloader                                       &bootloader    &trans         &trans         &trans
+&kp F12        &kp F7         &kp F8         &kp F9         &kp PSCRN          &kp F12        &kp F7         &kp F8         &kp F9           &trans
+&mt LGUI F11   &mt LALT F4    &mt LCTRL F5   &mt LSHFT F6   &kp SYSREQ          &kp F11        &mt RSHFT F4   &mt RCTRL F5   &mt RALT F6      &kp LGUI
+&kp F10        &kp F1         &kp F2         &kp F3         &kp PAUSE_BREAK     &kp F10        &kp F1         &kp F2         &kp F3          &trans
+&trans         &trans         &trans       &bootloader                                       &bootloader    &trans         &trans         &trans
             >;
         sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
