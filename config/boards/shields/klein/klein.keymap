@@ -32,10 +32,10 @@
         default_layer {
 
             bindings = <
-&mt LC(S) Q    &mt LC(A) W           &mt LC(C) F     &mt LC(V)  P     &mt RET B           &kp J                   &kp L          &kp U          &kp Y          &kp SQT
-&mt LGUI A     &mt LALT R            &mt LCTRL S     &mt LSHFT T     &mt LC(E)  G          &mt INSERT  M           &mt RSHFT N    &mt RCTRL E    &mt RALT I     &mt LGUI O
-&mt ESC Z      &mt K_CONTEXT_MENU X   &mt INSERT C    &mt LC(U) D    &mt LC(J) V             &mt K_CONTEXT_MENU K    &kp H          &kp COMMA      &kp DOT        &kp FSLH
-&lt FUN DEL   &lt NAV  TAB &lt  NUM SPACE  &lt BLU  K_CONTEXT_MENU             &lt BLU K_CONTEXT_MENU  &lt NUM BKSP    &lt SYM RET   &lt FUN ESC
+&mt LC(S) Q    &mt LC(A) W           &mt LC(C) F     &mt LC(V)  P     &mt K_CONTEXT_MENU B           &kp J                       &kp L          &kp U          &kp Y          &kp SQT
+&mt LGUI A     &mt LALT R            &mt LCTRL S     &mt LSHFT T     &mt LC(E)  G                   &mt K_CONTEXT_MENU  M        &mt RSHFT N    &mt RCTRL E    &mt RALT I     &mt LGUI O
+&kp Z          &mt ESC X             &mt INSERT C    &mt LC(U) D    &mt LC(J) V                    &kp K    &kp H                 &kp COMMA      &kp DOT        &kp FSLH
+&lt FUN DEL   &lt SYM RET  &lt  NUM SPACE  &lt BLU  K_CONTEXT_MENU             &lt BLU K_CONTEXT_MENU  &lt SYM BKSP    &lt NAV  TAB   &lt FUN ESC
             >;
         sensor-bindings = <&inc_dec_kp  LC(PG_UP) LC(PG_DN)  &inc_dec_kp LC(Z) LC(Y)>;
         };
@@ -78,7 +78,7 @@
             bindings = <
 &kp LS(LBKT)   &kp LS(N7)     &kp LS(N8)     &kp LS(N9)     &kp LS(RBKT)        &trans         &trans                &trans            &trans         &trans
 &kp LS(SEMI)   &kp LS(N4)     &kp LS(N5)     &kp LS(N6)     &kp LS(EQUAL)       &trans         &mt LSHFT LS(SEMI)    &mt LCTRL EQUAL   &kp LALT       &mt LGUI SEMI
-&kp LS(GRAVE)  &kp LS(N1)     &kp LS(N2)     &kp LS(N3)     &kp LS(BSLH)        &trans         &trans                &trans            &trans         &trans
+&kp LS(GRAVE)  &kp LS(N1)     &kp LS(N2)     &kp LS(N3)     &kp LS(BSLH)        &caps_word         &trans                &trans            &trans         &trans
 &kp LS(PERIOD) &kp LS(N0)     &kp LS(MINUS)  &bootloader                                       &bootloader            &trans            &trans         &trans
             >;
         sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
