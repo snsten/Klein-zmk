@@ -70,7 +70,7 @@
 &kp F10        &kp F1         &kp F2         &kp F3         &kp PAUSE_BREAK     &kp F10        &kp F1         &kp F2         &kp F3          &trans
 &trans         &trans         &trans       &bootloader                                       &bootloader    &trans         &trans         &trans
             >;
-        sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+        sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_BRI_DN C_BRI_UP>;
         };
 
         sym_layer {
