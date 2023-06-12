@@ -37,7 +37,7 @@
 &kp Z          &mt LC(X) X             &mt INSERT C    &mt LC(U) D    &mt LC(J) V                    &kp K    &kp H                 &kp COMMA      &kp DOT        &kp FSLH
 &lt FUN DEL   &lt NAV RET  &lt  NUM SPACE  &lt BLU  K_CONTEXT_MENU             &lt BLU K_CONTEXT_MENU  &lt SYM BKSP    &lt NAV TAB   &lt FUN ESC
             >;
-        sensor-bindings = <&inc_dec_kp  LC(PG_UP) LC(PG_DN)  &inc_dec_kp LC(Z) LC(Y)>;
+        sensor-bindings = <&inc_dec_kp  LC(PG_UP) LC(PG_DN) &inc_dec_kp LC(LS(TAB)) LC(TAB) >;
         };
 
         nav_layer {
@@ -59,7 +59,7 @@
 &kp GRAVE      &kp N1         &kp N2         &kp N3         &mt LGUI BSLH           &caps_word     &kp N1         &kp N2         &kp N3          &trans
 &kp PERIOD     &kp N0         &kp MINUS      &bootloader                                       &bootloader   &kp MINUS         &kp N0          &kp PERIOD
             >;
-        sensor-bindings = <&inc_dec_kp UP DOWN>;
+        sensor-bindings = <&inc_dec_kp UP DOWN  &inc_dec_kp LC(Z) LC(Y)>;
         };
 
         fun_layer {
