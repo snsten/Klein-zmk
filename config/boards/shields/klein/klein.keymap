@@ -43,7 +43,7 @@
         nav_layer {
 
             bindings = <
-&trans         &kp PG_UP        &kp UP           &kp PG_DN          &trans                &trans        &kp PG_UP       &kp UP       &kp PG_DN    &trans
+&trans         &kp PG_UP        &kp UP           &kp PG_DN          &trans                &tog NAV        &kp PG_UP       &kp UP       &kp PG_DN    &trans
 &mt LGUI HOME  &mt LALT LEFT    &mt LCTRL DOWN   &mt LSHFT RIGHT    &kp END                  &kp HOME         &kp LEFT       &kp DOWN     &kp RIGHT     &kp END
 &trans         &kp PG_UP        &kp DOWN         &kp PG_DN         &trans                   &trans           &kp PG_UP      &kp DOWN     &kp PG_DN     &trans
 &trans         &trans         &trans         &bootloader                                           &trans     &trans         &trans         &trans
