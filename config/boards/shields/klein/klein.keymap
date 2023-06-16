@@ -18,24 +18,49 @@
 #define MEDIA  5
 #define BLU 6
 
+#define COMBO(NAME, BINDINGS, KEYPOS) \
+  combo_##NAME { \
+    timeout-ms = <50>; \
+    bindings = <BINDINGS>; \
+    key-positions = <KEYPOS>; \
+    layers = <0>; \
+  };
+  
 &mt {
   quick-tap-ms = <125>;
   global-quick-tap;
   flavor = "tap-preferred";
-  tapping-term-ms = <200>;
+  tapping-term-ms = <150>;
 };
 
 / {
+
+ combos {
+                compatible = "zmk,combos";
+                      
+                COMBO(capsword, &caps_word, 13 16)
+                COMBO(enter, &kp RET, 12 13)
+                COMBO(enter, &kp RET, 16 17)
+                COMBO(esckey, &kp ESC, 22 23)
+                COMBO(esckey, &kp ESC, 26 27)
+                COMBO(toggle, &tog NAV, 31 38)
+                COMBO(delete, &kp DEL, 21 22)
+                COMBO(delete, &kp DEL, 27 28)
+                COMBO(bacsp, &kp BKSP, 11 12)
+                COMBO(bacsp, &kp BKSP, 17 18)
+               
+        };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
 
             bindings = <
-&mt LC(S) Q    &mt LC(A) W           &mt LC(C) F     &mt LC(V)  P     &mt LA(TAB) B           &kp J                       &kp L          &kp U          &kp Y          &kp SQT
+&mt LC(S) Q    &mt LC(A) W           &mt LC(C) F     &mt LC(V)  P     &mt LA(TAB) B               &kp J                       &kp L          &kp U          &kp Y          &kp SQT
 &mt LGUI A     &mt LALT R            &mt LCTRL S     &mt LSHFT T     &mt LC(E)  G                   &mt K_CONTEXT_MENU  M        &mt RSHFT N    &mt RCTRL E    &mt RALT I     &mt LGUI O
-&mt ESC Z          &mt LC(X) X             &mt INSERT C    &mt LC(U) D    &mt LA(N1) V                    &kp K    &mt RET H         &kp COMMA      &kp DOT        &kp FSLH
-&lt FUN DEL   &lt NAV RET  &lt  NUM SPACE  &lt BLU  K_CONTEXT_MENU             &lt BLU K_CONTEXT_MENU  &lt SYM BKSP    &lt NAV TAB   &tog NAV
+&mt ESC Z          &mt LC(X) X             &mt INSERT C    &mt LC(U) D    &mt LA(N1) V                    &kp K    &kp H         &kp COMMA      &kp DOT        &kp FSLH
+&lt DEL BKSP   &lt FUN TAB  &lt  NUM SPACE  &lt BLU  K_CONTEXT_MENU                             &lt BLU K_CONTEXT_MENU  &lt SYM LC(BKSP)    &lt NAV TAB   &lt FUN ESC
             >;
         sensor-bindings = < &inc_dec_kp LC(LS(TAB)) LC(TAB) &inc_dec_kp LC(Z) LC(Y)>;
         };
@@ -43,8 +68,8 @@
         nav_layer {
 
             bindings = <
-&trans         &kp PG_UP        &kp UP           &kp PG_DN          &trans                &trans        &kp PG_UP       &kp UP       &kp PG_DN    &trans
-&mt LGUI HOME  &mt LALT LEFT    &mt LCTRL DOWN   &mt LSHFT RIGHT    &kp END                &mt K_CONTEXT_MENU HOME      &mt RSHFT LEFT       &kp DOWN     &kp RIGHT     &mt LGUI END
+&trans         &trans        &trans          &trans         &trans                &trans        &kp PG_UP       &kp UP       &kp PG_DN    &trans
+&trans          &trans       &trans           &trans        &trans                &mt K_CONTEXT_MENU HOME      &mt RSHFT LEFT       &kp DOWN     &kp RIGHT     &mt LGUI END
 &trans         &kp PG_UP        &kp DOWN         &kp PG_DN         &trans                   &trans           &kp RET      &mt K_CONTEXT_MENU DOWN     &kp ESC     &trans
 &trans         &trans         &trans         &bootloader                                           &trans     &trans         &trans         &tog NAV
             >;
