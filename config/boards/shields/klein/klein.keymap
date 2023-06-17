@@ -39,15 +39,16 @@
                 compatible = "zmk,combos";
                       
                 COMBO(capsword, &caps_word, 13 16)
+
+                COMBO(esckeyL, &kp ESC, 11 12)
                 COMBO(enterL, &kp RET, 12 13)
-                COMBO(enterR, &kp RET, 16 17)
-                COMBO(esckeyL, &kp ESC, 22 23)
-                COMBO(esckeyR, &kp ESC, 26 27)
                 COMBO(deleteL, &kp DEL, 21 22)
+                COMBO(bacspL, &kp BKSP, 22 23)
+            
+                COMBO(enterR, &kp RET, 16 17)
+                COMBO(esckeyR, &kp ESC, 17 18)
+                COMBO(bacspR, &kp BKSP, 26 27)
                 COMBO(deleteR, &kp DEL, 27 28)
-                COMBO(bacspL, &kp BKSP, 11 12)
-                COMBO(bacspR, &kp BKSP, 17 18)
-               
         };
 
     keymap {
@@ -67,12 +68,12 @@
         nav_layer {
 
             bindings = <
-&trans         &trans        &trans          &trans         &trans                &trans               &mt LC(PG_UP) PG_UP     &mt LA(UP) UP      &mt LC(PG_DN) PG_DN   &trans
-&trans         &trans       &trans           &trans        &trans                 &mt LC(HOME) HOME    &mt LC(LEFT) LEFT           &kp DOWN     &mt LC(RIGHT) RIGHT   &mt LC(END) END
+&trans         &trans        &trans          &trans         &trans                &trans               &mt LC(PG_UP) PG_UP     &kp UP      &mt LC(PG_DN) PG_DN   &trans
+&trans         &trans       &trans           &trans        &trans                 &mt LC(HOME) HOME    &mt LC(LEFT) LEFT       &kp DOWN     &mt LC(RIGHT) RIGHT   &mt LC(END) END
 &trans         &trans       &trans         &trans         &trans                   &trans           &trans      &trans     &trans     &trans
 &trans         &trans         &trans         &trans                                             &trans     &trans         &trans         &tog NAV
             >;
-        sensor-bindings = < &inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN &inc_dec_kp LEFT RIGHT >;
+        sensor-bindings = < &inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN &inc_dec_kp LEFT RIGHT >;
         };
 
         num_layer {
