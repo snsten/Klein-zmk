@@ -39,12 +39,14 @@
                 compatible = "zmk,combos";
                       
                 COMBO(capsword, &caps_word, 13 16)
-
+                
                 COMBO(esckeyL, &kp ESC, 11 12)
                 COMBO(enterL, &kp RET, 12 13)
                 COMBO(deleteL, &kp DEL, 21 22)
                 COMBO(bacspL, &kp BKSP, 22 23)
-            
+                
+                COMBO(menu, &kp K_CONTEXT_MENU, 16 18)
+
                 COMBO(enterR, &kp RET, 16 17)
                 COMBO(esckeyR, &kp ESC, 17 18)
                 COMBO(bacspR, &kp BKSP, 26 27)
@@ -58,7 +60,7 @@
 
             bindings = <
 &mt LC(S) Q    &mt LC(A) W           &mt LC(C) F     &mt LC(V)  P     &mt LA(O) B               &kp J           &kp L          &kp U          &kp Y          &kp SQT
-&mt LGUI A     &mt LALT R            &mt LCTRL S     &mt LSHFT T     &mt LC(E)  G                   &mt K_CONTEXT_MENU  M        &mt RSHFT N    &mt RCTRL E    &mt RALT I     &mt LGUI O
+&mt LGUI A     &mt LALT R            &mt LCTRL S     &mt LSHFT T     &mt LC(E)  G                   &kp  M        &mt RSHFT N    &mt RCTRL E    &mt RALT I     &mt LGUI O
 &mt LC(Z) Z     &mt LC(X) X             &mt INSERT C    &mt LC(U) D    &mt LA(N1) V                    &kp K    &kp H         &kp COMMA      &kp DOT        &kp FSLH
 &tog NUM   &lt FUN LS(TAB)  &lt  NUM SPACE  &lt BLU  K_CONTEXT_MENU                             &lt BLU K_CONTEXT_MENU  &lt SYM BKSP    &lt NAV TAB    &tog NAV
             >;
@@ -82,7 +84,7 @@
 &kp LBKT       &kp N7         &kp N8         &kp N9         &mt N0  RBKT            &trans         &kp N7         &kp N8         &kp N9          &trans
 &mt LGUI SEMI  &mt LALT N4    &mt LCTRL N5   &mt LSHFT N6   &kp EQUAL               &trans         &mt RSHFT N4   &mt RCTRL N5   &mt RALT N6     &kp LGUI
 &kp GRAVE      &kp N1         &kp N2         &kp N3         &mt LGUI BSLH           &caps_word     &kp N1         &kp N2         &kp N3          &trans
-&tog NUM     &kp N0         &kp LGUI      &trans                                        &trans     &kp MINUS         &kp N0          &kp PERIOD
+&tog NUM     &kp N0         &trans      &trans                                        &trans     &kp MINUS         &kp N0          &kp PERIOD
             >;
         sensor-bindings = <&inc_dec_kp UP DOWN  &inc_dec_kp LC(Z) LC(Y)>;
         };
