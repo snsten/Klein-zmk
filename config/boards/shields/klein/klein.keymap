@@ -59,7 +59,7 @@
         default_layer {
 
             bindings = <
-&mt LC(S) Q    &mt LC(A) W           &mt LC(C) F     &mt LC(V)  P     &mt LC(TAB) B               &kp J           &kp L          &kp U          &kp Y          &kp SQT
+&mt LC(S) Q    &mt LC(A) W           &mt LC(C) F     &mt LC(V)  P     &mt LA(TAB) B               &kp J           &kp L          &kp U          &kp Y          &kp SQT
 &mt LGUI A     &mt LALT R            &mt LCTRL S     &mt LSHFT T     &mt LC(E)  G                   &kp  M        &mt RSHFT N    &mt RCTRL E    &mt RALT I     &mt LGUI O
 &mt LC(Z) Z     &mt LC(X) X             &mt INSERT C    &mt LC(U) D    &mt LA(N1) V                    &kp K    &kp H         &kp COMMA      &kp DOT        &kp FSLH
 &kp F9   &lt FUN LS(TAB)  &lt  NUM SPACE  &lt BLU  K_CONTEXT_MENU                             &lt BLU K_CONTEXT_MENU  &lt SYM BKSP    &lt NAV TAB    &tog NAV
