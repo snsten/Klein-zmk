@@ -71,8 +71,8 @@
 
             bindings = <
 &trans         &trans        &trans          &trans         &trans                &trans               &mt LC(PG_UP) PG_UP     &kp UP      &mt LC(PG_DN) PG_DN   &trans
-&trans         &trans       &trans           &trans        &trans                 &mt LC(HOME) HOME    &mt LC(LEFT) LEFT       &kp DOWN     &mt LC(RIGHT) RIGHT   &mt LC(END) END
-&trans         &trans       &trans         &trans         &trans                   &trans           &trans      &trans     &trans     &trans
+&trans         &trans       &trans           &trans        &trans                 &mt LC(HOME) HOME    &kp LEFT       &kp DOWN     &kp RIGHT   &mt LC(END) END
+&trans         &trans       &trans         &trans         &trans                   &trans          &kp LS(LBKT)      &kp LS(RBKT)       &trans     &trans
 &trans         &trans         &trans         &trans                                             &trans     &trans         &trans         &tog NAV
             >;
         sensor-bindings = < &inc_dec_kp UP DOWN  &inc_dec_kp LEFT RIGHT >;
@@ -103,9 +103,9 @@
         sym_layer {
             
             bindings = <
-&kp LS(SEMI)   &kp LS(N7)     &kp LS(N8)     &kp LS(N9)     &kp LS(EQUAL)        &trans         &kp LS(LBKT)              &trans            &trans         &trans
-&kp LS(LBKT)   &kp LS(N4)     &kp LS(N5)     &kp LS(N6)     &kp LS(RBKT)       &kp LS(N9)        &mt LSHFT LS(SEMI)    &mt LCTRL EQUAL   &mt LALT LS(N0)      &mt LGUI SEMI
-&kp LS(GRAVE)  &kp LS(N1)     &kp LS(N2)     &kp LS(N3)     &kp LS(BSLH)        &caps_word         &kp LS(RBKT)                &trans            &trans         &trans
+&kp LS(SEMI)   &kp LS(N7)     &kp LS(N8)     &kp LS(N9)     &kp LS(EQUAL)        &trans          &trans             &trans            &trans         &trans
+&kp LS(LBKT)   &kp LS(N4)     &kp LS(N5)     &kp LS(N6)     &kp LS(RBKT)       &kp LS(SEMI)     &mt LSHFT EQUAL     &mt LCTRL LS(N9)      &mt LALT LS(N0)      &mt LGUI SEMI
+&kp LS(GRAVE)  &kp LS(N1)     &kp LS(N2)     &kp LS(N3)     &kp LS(BSLH)        &caps_word         &trans               &trans            &trans         &trans
 &kp LS(PERIOD) &kp LS(N0)     &kp LS(MINUS)  &bootloader                                       &bootloader            &trans            &trans         &trans
             >;
         sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
