@@ -27,7 +27,7 @@
   };
   
 &mt {
-  quick-tap-ms = <175>;
+  quick-tap-ms = <125>;
   global-quick-tap;
   flavor = "balanced";
   tapping-term-ms = <280>;
@@ -59,7 +59,7 @@
         default_layer {
 
             bindings = <
-&mt LC(S) Q    &mt LC(A) W           &mt LC(C) F     &mt LC(V)  P     &mt LA(O) B               &kp J           &kp L          &kp U          &kp Y          &kp SQT
+&mt LC(S) Q    &mt LC(A) W           &mt LC(C) F     &mt LC(V)  P     &mt LC(TAB) B               &kp J           &kp L          &kp U          &kp Y          &kp SQT
 &mt LGUI A     &mt LALT R            &mt LCTRL S     &mt LSHFT T     &mt LC(E)  G                   &kp  M        &mt RSHFT N    &mt RCTRL E    &mt RALT I     &mt LGUI O
 &mt LC(Z) Z     &mt LC(X) X             &mt INSERT C    &mt LC(U) D    &mt LA(N1) V                    &kp K    &kp H         &kp COMMA      &kp DOT        &kp FSLH
 &tog NUM   &lt FUN LS(TAB)  &lt  NUM SPACE  &lt BLU  K_CONTEXT_MENU                             &lt BLU K_CONTEXT_MENU  &lt SYM BKSP    &lt NAV TAB    &tog NAV
@@ -83,7 +83,7 @@
             bindings = <
 &kp LBKT       &kp N7         &kp N8         &kp N9         &mt N0  RBKT            &trans         &kp N7         &kp N8         &kp N9          &trans
 &mt LGUI SEMI  &mt LALT N4    &mt LCTRL N5   &mt LSHFT N6   &kp EQUAL               &trans         &mt RSHFT N4   &mt RCTRL N5   &mt RALT N6     &kp LGUI
-&kp GRAVE      &kp N1         &kp N2         &kp N3         &mt LGUI BSLH           &caps_word     &kp N1         &kp N2         &kp N3          &trans
+&kp GRAVE      &kp N1         &kp N2         &kp N3         &mt LGUI BSLH           &trans     &kp N1         &kp N2         &kp N3          &trans
 &tog NUM     &kp N0         &trans      &trans                                        &trans     &kp MINUS         &kp N0          &kp PERIOD
             >;
         sensor-bindings = <&inc_dec_kp UP DOWN  &inc_dec_kp LC(Z) LC(Y)>;
