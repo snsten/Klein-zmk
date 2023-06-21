@@ -39,7 +39,7 @@
                 compatible = "zmk,combos";
                       
                 COMBO(capsword, &caps_word, 13 16)
-                
+                COMBO(symbol, &sl SYM, 11 13)                
                 COMBO(esckeyL, &kp ESC, 11 12)
                 COMBO(enterL, &kp RET, 12 13)
                 COMBO(deleteL, &kp DEL, 21 22)
@@ -62,7 +62,7 @@
 &mt LC(S) Q    &mt LC(A) W           &mt LC(C) F     &mt LC(V)  P     &mt LA(TAB) B               &kp J           &kp L          &kp U          &kp Y          &kp SQT
 &mt LGUI A     &mt LALT R            &mt LCTRL S     &mt LSHFT T     &mt LC(E)  G                   &kp  M        &mt RSHFT N    &mt RCTRL E    &mt RALT I     &mt LGUI O
 &mt LC(Z) Z     &mt LC(X) X             &mt INSERT C    &mt LC(U) D    &mt LA(N1) V                    &kp K    &kp H         &kp COMMA      &kp DOT        &kp FSLH
-&kp F9   &lt FUN LS(TAB)  &lt  NUM SPACE  &lt BLU  K_CONTEXT_MENU                             &lt BLU K_CONTEXT_MENU  &lt SYM BKSP    &lt NAV TAB    &tog NAV
+&lt SYM F9   &lt FUN LS(TAB)  &lt  NUM SPACE  &lt BLU  K_CONTEXT_MENU                             &lt BLU K_CONTEXT_MENU  &mt RSHIFT BKSP    &lt NAV TAB    &tog NAV
             >;
         sensor-bindings = < &inc_dec_kp LC(LS(TAB)) LC(TAB) &inc_dec_kp LC(Z) LC(Y)>;
         };
@@ -104,8 +104,8 @@
             
             bindings = <
 &kp LS(SEMI)   &kp LS(N7)     &kp LS(N8)     &kp LS(N9)     &kp LS(EQUAL)        &trans          &trans             &trans            &trans         &trans
-&kp LS(LBKT)   &kp LS(N4)     &kp LS(N5)     &kp LS(N6)     &kp LS(RBKT)       &kp LS(SEMI)     &mt LSHFT EQUAL     &mt LCTRL LS(N9)      &mt LALT LS(N0)      &mt LGUI SEMI
-&kp LS(GRAVE)  &kp LS(N1)     &kp LS(N2)     &kp LS(N3)     &kp LS(BSLH)        &caps_word         &trans               &trans            &trans         &trans
+&kp LS(LBKT)   &kp LS(N4)     &kp LS(N5)     &kp LS(N6)     &kp LS(RBKT)       &trans           &kp  LEFT          &kp  LS(N9)           &kp  LS(N0)       &kp SEMI
+&kp LS(GRAVE)  &kp LS(N1)     &kp LS(N2)     &kp LS(N3)     &kp LS(BSLH)        &trans         &kp LS(SEMI)         &kp EQUAL            &trans         &trans
 &kp LS(PERIOD) &kp LS(N0)     &kp LS(MINUS)  &bootloader                                       &bootloader            &trans            &trans         &trans
             >;
         sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
