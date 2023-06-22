@@ -33,20 +33,24 @@
   tapping-term-ms = <200>;
 };
 
+&caps_word {
+    continue-list = <UNDERSCORE MINUS BACKSPACE>;
+};
+
 / {
 
  combos {
                 compatible = "zmk,combos";
                       
                 COMBO(capsword, &caps_word, 13 16)
-                COMBO(symbol, &sl SYM, 11 13)                
+                COMBO(symbolL, &sl SYM, 12 23)                
                 COMBO(esckeyL, &kp ESC, 11 12)
                 COMBO(enterL, &kp RET, 12 13)
                 COMBO(deleteL, &kp DEL, 21 22)
                 COMBO(bacspL, &kp BKSP, 22 23)
                 
                 COMBO(menu, &kp K_CONTEXT_MENU, 16 18)
-
+                COMBO(symbolR, &sl SYM, 17 26)
                 COMBO(enterR, &kp RET, 16 17)
                 COMBO(esckeyR, &kp ESC, 17 18)
                 COMBO(bacspR, &kp BKSP, 26 27)
@@ -61,8 +65,8 @@
             bindings = <
 &mt LC(S) Q    &mt LC(A) W           &mt LC(C) F     &mt LC(V)  P     &mt LA(TAB) B               &kp J           &kp L          &kp U          &kp Y          &kp SQT
 &mt LGUI A     &mt LALT R            &mt LCTRL S     &mt LSHFT T     &mt LC(E)  G                   &kp  M        &mt RSHFT N    &mt RCTRL E    &mt RALT I     &mt LGUI O
-&mt LC(Z) Z     &mt LC(X) X             &mt INSERT C    &mt LC(U) D    &mt LA(N1) V                    &kp K    &kp H         &kp COMMA      &kp DOT        &kp FSLH
-&lt SYM F9   &lt FUN LS(TAB)  &lt  NUM SPACE  &lt BLU  K_CONTEXT_MENU                             &lt BLU K_CONTEXT_MENU  &mt RSHIFT BKSP    &lt NAV TAB    &tog NAV
+&mt LC(Z) Z     &mt LC(LALT) X             &mt INSERT C    &mt LC(U) D    &mt LA(N1) V                    &kp K    &kp H         &kp COMMA      &kp DOT        &kp FSLH
+&lt NAV F9   &lt FUN LS(TAB)  &lt  NUM SPACE  &lt BLU  K_CONTEXT_MENU                             &lt BLU K_CONTEXT_MENU  &kp BKSP    &lt NAV TAB    &tog NAV
             >;
         sensor-bindings = < &inc_dec_kp LC(LS(TAB)) LC(TAB) &inc_dec_kp LC(Z) LC(Y)>;
         };
