@@ -108,9 +108,9 @@
             
             bindings = <
 &kp LS(SEMI)   &kp LS(N7)     &kp LS(N8)     &kp LS(N9)     &kp LS(EQUAL)        &trans          &trans             &trans            &trans         &trans
-&kp LS(LBKT)   &kp LS(N4)     &kp LS(N5)     &kp LS(N6)     &kp LS(RBKT)       &trans           &kp  LEFT          &kp  LS(N9)           &kp  LS(N0)       &kp SEMI
-&kp LS(GRAVE)  &kp LS(N1)     &kp LS(N2)     &kp LS(N3)     &kp LS(BSLH)        &trans         &kp LS(SEMI)         &kp EQUAL            &trans         &trans
-&kp LS(PERIOD) &kp LS(N0)     &kp LS(MINUS)  &bootloader                                       &bootloader            &trans            &trans         &trans
+&kp LS(LBKT)   &kp LS(N4)     &kp LS(N5)     &kp LS(N6)     &kp LS(RBKT)       &kp LS(SEMI)     &kp  LS(N9)          &kp   LS(N0)       &kp  EQUAL       &kp SEMI
+&kp LS(GRAVE)  &kp LS(N1)     &kp LS(N2)     &kp LS(N3)     &kp LS(BSLH)        &trans         &trans               &trans             &trans         &trans
+&kp LS(PERIOD) &kp LS(N0)     &kp LS(MINUS)  &bootloader                                       &bootloader            &kp MINUS             &trans         &trans
             >;
         sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
