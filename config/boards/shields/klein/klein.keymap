@@ -51,6 +51,7 @@
                 COMBO(deleteL, &kp DEL, 21 22)
                 COMBO(bacspL, &kp BKSP, 22 23)
                 COMBO(snine, &kp LS(N9), 12 23)
+                COMBO(leftb, &kp LBKT, 1 2)
                 
                 COMBO(menu, &kp K_CONTEXT_MENU, 16 18)
                 COMBO(semi, &kp SEMI, 17 18)
@@ -59,6 +60,7 @@
                 COMBO(bacspR, &kp BKSP, 26 27)
                 COMBO(deleteR, &kp DEL, 27 28)
                 COMBO(szero, &kp LS(N0), 17 26)
+                COMBO(rightb, &kp, RBKT, 7 8)
         };
 
     keymap {
@@ -70,7 +72,7 @@
 &mt LC(S) Q    &mt LC(X) W           &mt LC(C) F     &mt LC(V)  P     &mt LA(TAB) B               &kp J           &kp L          &kp U          &kp Y          &kp SQT
 &kp A         &mt LALT R            &mt LCTRL S     &mt LSHFT T     &mt LC(E)  G                   &mt LA(N1)  M        &mt RSHFT N    &mt RCTRL E    &mt RALT I     &kp O
 &kp Z          &kp  X             &mt INSERT C    &mt LC(U) D    &kp V                    &kp K    &kp H         &kp COMMA      &kp DOT        &kp FSLH
-&mt LGUI F9   &lt FUN LS(TAB)  &lt  NUM SPACE  &lt BLU  K_CONTEXT_MENU                             &lt BLU K_CONTEXT_MENU  &mt SYM BKSP    &lt NAV TAB    &tog NAV
+&mt LGUI F9   &lt FUN LS(TAB)  &lt  NUM SPACE  &lt BLU  K_CONTEXT_MENU                             &lt BLU K_CONTEXT_MENU  &lt SYM BKSP    &lt NAV TAB    &tog NAV
             >;
         sensor-bindings = < &inc_dec_kp LC(LS(TAB)) LC(TAB) &inc_dec_kp LC(Z) LC(Y)>;
         };
