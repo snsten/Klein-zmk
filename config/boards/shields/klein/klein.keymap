@@ -60,7 +60,7 @@
                 COMBO(bacspR, &kp BKSP, 26 27)
                 COMBO(deleteR, &kp DEL, 27 28)
                 COMBO(szero, &kp LS(N0), 17 26)
-                COMBO(rightb, &kp, RBKT, 7 8)
+                COMBO(rightb, &kp RBKT, 7 8)
         };
 
     keymap {
