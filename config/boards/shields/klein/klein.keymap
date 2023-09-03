@@ -29,14 +29,15 @@
         compatible = "zmk,combos";
 
         copy {
-            bindings = <&kp K_COPY>;
+            bindings = <&kp LG(C)>;
             key-positions = <21 22>;
             layers = <0>;
         };
 
         paste {
-            bindings = <&kp K_PASTE>;
+            bindings = <&kp LG(V)>;
             key-positions = <22 23>;
+            layers = <0>;
         };
 
         leftParet {
