@@ -19,11 +19,38 @@
 #define BLU 6
 
 &mt {
-  quick-tap-ms = <100>;
-  global-quick-tap;
-  flavor = "tap-preferred";
-  tapping-term-ms = <180>;
+    quick-tap-ms = <100>;
+    global-quick-tap;
+    flavor = "tap-preferred";
+    tapping-term-ms = <180>;
 };
+
+/ {
+    combos {
+        compatible = "zmk,combos";
+
+        copy {
+            bindings = <&kp K_COPY>;
+            key-positions = <21 22>;
+            layers = <0>;
+        };
+
+        paste {
+            bindings = <&kp K_PASTE>;
+            key-positions = <22 23>;
+        };
+
+        leftParet {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <6 7>;
+        };
+
+        rightParet {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <7 8>;
+            layers = <0>;
+        };
+    };
 
 / {
     keymap {
