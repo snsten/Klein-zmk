@@ -1,0 +1,5 @@
+config SHIELD_KLEIN_LEFT
+    def_bool $(shields_list_contains,klein_left)
+
+config SHIELD_KLEIN_RIGHT
+    def_bool $(shields_list_contains,klein_right)  
